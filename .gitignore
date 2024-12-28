@@ -1,15 +1,151 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# General OS files
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS specific files
+.Trashes
+._*
+.Spotlight-V100
+.fseventsd
+VolumeIcon.icns
+Icon?
+.icon?
+*/Icon?
+/.icon?
+
+# Gradle files
+.gradle/
+build/
+.gradle-cache/
+
+# Local configuration file (SDK path, etc.)
 local.properties
+
+# Log/OS files
+*.log
+logs/
+*.stacktrace
+*.pid
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.db
+output.json
+navigation.xml
+
+# IntelliJ IDEA specific
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+.idea_modules/
+*.ipr
+*.iws
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+google-services.yaml
+
+# Android Profiling
+*.hprof
+trace/
+
+# Android Lint
+lint/intermediates/
+lint/generated/
+
+# Jetpack Compose build cache
+compose-build-cache/
+
+# Kotlin build files
+kotlin/
+kotlin-dsl/
+buildSrc/build/
+buildSrc/.gradle/
+
+# Crashlytics
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# NDK
+obj/
+*.so
+
+# Proguard
+proguard/
+*.pro
+
+# Generated Assets
+build/generated/
+build/intermediates/
+build/kotlin/
+build/tmp/
+
+# Dependency management
+/.idea/libraries/
+.gradle/gradle.properties.lock
+
+# Mac OS Finder files
+**/.Spotlight-V100
+**/.Trashes
+*.swp
+
+# Virtual environment (Python related)
+venv/
+.venv/
+
+# Backup files
+*.bak
+*.swp
+*~ 
+
+# Java
+*.class
+
+# Temporary files
+*.tmp
+*.temp
+
+# Unit Test Reports
+/test-results/
+
+# Git specific
+*.orig
+
+# Caches
+/.caches/
+/caches/
+.idea/caches/
+/.idea/workspace.xml
+
+# Firebase Crashlytics & Analytics
+firebase-debug.log
+firebase-appdistribution.log
+
+# Build scripts output
+logs/
+dist/
+tmp/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Local IntelliJ configurations
+.idea/runConfigurations/
+.idea/codeStyles/

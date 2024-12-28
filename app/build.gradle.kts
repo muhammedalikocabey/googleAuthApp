@@ -3,16 +3,17 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "com.makocabey.googleauthapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.makocabey.googleauthapp"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -54,16 +55,32 @@ android {
 dependencies {
 
     // Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0")
-    implementation("com.squareup.okhttp3:okhttp-urlconnection:4.9.1")
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.retrofit2.kotlinx.serialization.converter)
+    implementation(libs.okhttp.urlconnection)
 
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0-RC")
+    // Kotlinx Serialization
+    implementation(libs.kotlinx.serialization.json)
 
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0-RC")
+    // Dagger - Hilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    // DataStore Preferences
+    implementation(libs.androidx.datastore.preferences)
+
+    // Compose Navigation
+    implementation(libs.androidx.navigation.compose)
+
+    // Google Auth
+    implementation(libs.play.services.auth)
+
+    // Coil
+    implementation(libs.coil.compose)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
